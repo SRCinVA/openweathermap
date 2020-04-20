@@ -14,7 +14,60 @@ info:
 servers:
   - url: 'https://api.openweathermap.org/data/2.5'
     description: prod
-paths: {}
+paths:
+  /weather:
+    get:
+      summary: weather
+      tags:
+        - Weather endpoints
+      responses: {}
+      operationId: get-weather
+      description: |-
+        Access current weather data for any location including over 200,000 cities. Current weather is frequently updated based on global models and data from more than 40,000 weather stations
+        Data is available in JSON, XML, or HTML format. Available for both Free and paid subscriptions
+      parameters:
+        - schema:
+            type: string
+          in: query
+          name: zip
+          description: '**Zip code**. Search by zip code. *Example 95050*'
+        - schema:
+            type: string
+          in: query
+          name: units
+          description: "*Example: imperial*. Possible values: 'standard'"
+        - schema:
+            type: string
+          in: query
+          name: id
+          description: "**City ID**. *Example: '2172797'"
+        - schema:
+            type: string
+          in: query
+          name: lat
+          description: '**Latitude**. *Example: 35*'
+        - schema:
+            type: string
+          in: query
+          name: lon
+          description: |
+            **Longitude**. *Example: 139*.
+        - schema:
+            type: string
+          in: query
+          name: lang
+          description: '**Language**. *Example: en* You can use language parameters to select how the information will be presented.'
+        - schema:
+            type: string
+          in: query
+          name: mode
+          description: '**Mode**. *Example: html* Determines the format of the request.'
+        - schema:
+            type: string
+          in: query
+          name: q
+          description: '*Example: London*. You can call by city name.'
+    parameters: []
 components:
   schemas: {}
   securitySchemes:

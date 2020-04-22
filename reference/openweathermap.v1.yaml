@@ -160,12 +160,12 @@ paths:
             type: string
           in: query
           name: units
-          description: "*Example: imperial*. Possible values: 'standard', 'metric', and 'imperial'. When you do not use the 'units' parameter, the format is 'standard' by default."
+          description: '*Example: imperial*. Possible values: `standard`, `metric`, and `imperial`. When you do not use the `units` parameter, the format is `standard` by default.'
         - schema:
             type: string
           in: query
           name: id
-          description: "**City ID**. *Example: '2172797'*. You can call by city ID. The API responds with the exact result. The List of city IDs can be downloaded here. You can include multiple cities in this parameter --just separate them by commas. The limit of locations is 20. **Note: A single ID counts as one API call."
+          description: '**City ID**. *Example: 2172797*. You can call by city ID. The API responds with the exact result. The List of city IDs can be downloaded here. You can include multiple cities in this parameter --just separate them by commas. The limit of locations is 20. **Note: A single ID counts as one API call.'
         - schema:
             type: string
           in: query
@@ -181,12 +181,12 @@ paths:
             type: string
           in: query
           name: lang
-          description: "**Language**. *Example:en* You can use the lang parameters to get the output in your own language. We support the following languages that you can use with the corresponding lang values: Arabic - 'ar', Bulgarian - 'bg', Catalan - 'ca', Czech - 'cz', German - 'de', Greek - 'el', English - 'en', Persian (Farsi) - 'fa', Finnish - 'fi', French - 'fr', Galician - 'gl', Croatian - 'hr', Hungarian - 'hu', Itaian - 'it', Japanese - 'ja', Korean - 'kr', Latvian - 'la', Lithuanian - 'lt', Macedonian - 'mk', Dutch - 'nl', Polish - 'pl', Portuguese - 'pt', Romanian - 'ro', Russian - 'ru', Swedish - 'se', Slovak - 'sk', Slovenian - 'sl', Spanish - 'es', Turkish - 'tr', Ukrainian - 'ua', Vietnamese - 'vi', Chinese Simplified - 'zh-cn', Chinese Traditional - 'zh-tw' default: \"en\""
+          description: '**Language**. *Example:en* You can use the lang parameters to get the output in your own language. We support the following languages that you can use with the corresponding lang values: Arabic - `ar`, Bulgarian - `bg`, Catalan - `ca`, Czech - `cz`, German - `de`, Greek - `el`, English - `en`, Persian (Farsi) - `fa`, Finnish - `fi`, French - `fr`, Galician - `gl`, Croatian - `hr`, Hungarian - `hu`, Itaian - `it`, Japanese - `ja`, Korean - `kr`, Latvian - `la`, Lithuanian - `lt`, Macedonian - `mk`, Dutch - `nl`, Polish - `pl`, Portuguese - `pt`, Romanian - `ro`, Russian - `ru`, Swedish - `se`, Slovak - `sk`, Slovenian - `sl`, Spanish - `es`, Turkish - `tr`, Ukrainian - `ua`, Vietnamese - `vi`, Chinese Simplified - `zh_cn`, Chinese Traditional - `zh_tw` default: `en`'
         - schema:
             type: string
           in: query
           name: mode
-          description: "**Mode**. *Example: html* Determines the format of the response. Possible values are 'json', 'xml', and 'html'. If the mode parameter is empty, the format is 'json' by default. 'default: \"json\"' 'enum: \"json\", \"xml\", \"html\"'"
+          description: '**Mode**. *Example: html* Determines the format of the response. Possible values are `json`, `xml`, and `html`. If the mode parameter is empty, the format is `json` by default. `default: "json"` `enum: "json", "xml", "html"`'
         - schema:
             type: string
           in: query
